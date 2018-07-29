@@ -37,6 +37,7 @@ class SetCardView: UIView {
         self.card = card
         self.cardIsSelected = false
         self.isFaceUp = false
+        self.backgroundColor = UIColor.lightGray
     }
 
     //    convenience init(frame: CGRect, shape: SetCard.Shape, striping: SetCard.Shading, setCardColor: SetCard.Color, numberOfShapes: SetCard.Number, card: SetCard) {
@@ -117,6 +118,7 @@ class SetCardView: UIView {
         if let numberOfShapes = numberOfShapes?.rawValue, let card = card {
             for i in 0..<numberOfShapes {
                 let graphicView  = GraphicsView(frame: graphicsFrames[i], shape: card.shape, striping: card.shading, color: card.color)
+                graphicView.clipsToBounds = true
                 self.addSubview(graphicView)
             }
         }

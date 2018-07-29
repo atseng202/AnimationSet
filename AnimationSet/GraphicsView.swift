@@ -24,9 +24,11 @@ class GraphicsView: UIView {
 
     convenience init(frame: CGRect, shape: SetCard.Shape, striping: SetCard.Shading, color: SetCard.Color) {
         self.init(frame: frame)
+        self.clipsToBounds = true 
         self.shape = shape
         self.striping = striping
         self.setCardColor = color
+        self.backgroundColor = UIColor.lightGray
     }
 
     private var shapePath: UIBezierPath {
@@ -97,7 +99,7 @@ class GraphicsView: UIView {
             case .striped:
                 shapeColor.setStroke()
                 //                shape.stroke()
-                for x in stride(from: 0, to: bounds.width, by: bounds.width / 20) {
+                for x in stride(from: 0, to: bounds.width, by: bounds.width / 10) {
                     let stripePath = UIBezierPath()
                     stripePath.move(to: CGPoint(x: x, y: 0)) // uncertain where y is
                     stripePath.addLine(to: CGPoint(x: x, y: bounds.height))

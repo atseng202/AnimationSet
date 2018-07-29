@@ -20,6 +20,7 @@
 		3F9A0CA72025500B00C4CD0A /* SetCardBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A0CA62025500B00C4CD0A /* SetCardBehavior.swift */; };
 		3F9D3633202D0D77002938AC /* SetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D3632202D0D77002938AC /* SetCard.swift */; };
 		3FBD2E32201C09D70050F4F8 /* SetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD2E31201C09D70050F4F8 /* SetCardView.swift */; };
+		3FF2E23F2105836700CF9DE9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF2E23E2105836700CF9DE9 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		3F9A0CA62025500B00C4CD0A /* SetCardBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardBehavior.swift; sourceTree = "<group>"; };
 		3F9D3632202D0D77002938AC /* SetCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetCard.swift; sourceTree = "<group>"; };
 		3FBD2E31201C09D70050F4F8 /* SetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardView.swift; sourceTree = "<group>"; };
+		3FF2E23E2105836700CF9DE9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				3F3DD9AF2016C9B000875E92 /* SetDeck.swift */,
 				3FBD2E31201C09D70050F4F8 /* SetCardView.swift */,
 				3F6EEF8C2104777A004E8A3B /* GraphicsView.swift */,
+				3FF2E23E2105836700CF9DE9 /* Extensions.swift */,
 			);
 			path = AnimationSet;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				3F9D3633202D0D77002938AC /* SetCard.swift in Sources */,
 				3F3DD9B22016D43200875E92 /* SetGame.swift in Sources */,
 				3F3DD99B2016A73500875E92 /* AppDelegate.swift in Sources */,
+				3FF2E23F2105836700CF9DE9 /* Extensions.swift in Sources */,
 				3F3DD9B02016C9B000875E92 /* SetDeck.swift in Sources */,
 				3F9A0CA72025500B00C4CD0A /* SetCardBehavior.swift in Sources */,
 				3F368B72201BE3E600D94E75 /* Grid.swift in Sources */,

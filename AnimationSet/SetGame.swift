@@ -56,6 +56,7 @@ struct SetGame {
      
      
      */
+    // MARK: - Method first evaluates if a set exists for the currently selected cards, and then selects the newest card after 
     mutating func chooseCard(at index: Int) {
         assert(cardsActivelyInPlay.indices.contains(index), "Set.chooseCard(at: \(index)): chosen index is not one of the cards in play")
         
@@ -88,7 +89,7 @@ struct SetGame {
         }
         // After cards are removed or not in model, add newly selected card to my array
         selectedCards.append(newlySelectedCard)
-        
+        print("This card was just selected in the model: ", newlySelectedCard)
 //        if index > cardsActivelyInPlay.count - 1 {
 //            selectedCards.append(cardsActivelyInPlay[index - 3])
 //        } else {
