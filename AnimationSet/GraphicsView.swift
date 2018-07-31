@@ -24,11 +24,12 @@ class GraphicsView: UIView {
 
     convenience init(frame: CGRect, shape: SetCard.Shape, striping: SetCard.Shading, color: SetCard.Color) {
         self.init(frame: frame)
-        self.clipsToBounds = true 
+        self.clipsToBounds = true
         self.shape = shape
         self.striping = striping
         self.setCardColor = color
-        self.backgroundColor = UIColor.lightGray
+//        self.backgroundColor = UIColor.lightGray
+        self.backgroundColor = UIColor.init(red: 246/255, green: 237/255, blue: 233/255, alpha: 1)
     }
 
     private var shapePath: UIBezierPath {

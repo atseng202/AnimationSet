@@ -37,7 +37,8 @@ class SetCardView: UIView {
         self.card = card
         self.cardIsSelected = false
         self.isFaceUp = false
-        self.backgroundColor = UIColor.lightGray
+//        self.backgroundColor = UIColor.lightGray
+        self.backgroundColor = UIColor.init(red: 246/255, green: 237/255, blue: 233/255, alpha: 1)
     }
 
     //    convenience init(frame: CGRect, shape: SetCard.Shape, striping: SetCard.Shading, setCardColor: SetCard.Color, numberOfShapes: SetCard.Number, card: SetCard) {

@@ -81,7 +81,7 @@ struct SetGame {
             } else {
                 // No match so remove the 3 selected cards
                 selectedCards.removeAll()
-                self.gameScore -= 5
+                self.gameScore -= 3
                 self.setIsAvailable = false 
             }
         } else {
@@ -90,11 +90,6 @@ struct SetGame {
         // After cards are removed or not in model, add newly selected card to my array
         selectedCards.append(newlySelectedCard)
         print("This card was just selected in the model: ", newlySelectedCard)
-//        if index > cardsActivelyInPlay.count - 1 {
-//            selectedCards.append(cardsActivelyInPlay[index - 3])
-//        } else {
-//            selectedCards.append(cardsActivelyInPlay[index])
-//        }
     }
     
     /// Returns a Boolean indicating whether the 3 cards in the selectedCards parameter are
@@ -103,8 +98,8 @@ struct SetGame {
         if selectedCards.count < 3 {
             return false
         }
-        return true
-        
+//        return true
+
         let colors = Set(selectedCards.map { $0.color })
         let shades = Set(selectedCards.map {$0.shading })
         let numbers = Set(selectedCards.map {$0.number })
@@ -153,6 +148,10 @@ struct SetGame {
         selectedCards.removeAll()
         self.gameScore += pointsGivenForMatch
         
+    }
+
+    mutating func reduceScoreForWrongSet() {
+        gameScore -= 3
     }
     
     mutating func reshuffleCardsOnTable() {
